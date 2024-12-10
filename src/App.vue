@@ -1,6 +1,6 @@
 <template>
+  <Navi />
   <main font-sans p="x-4 y-10" text="center gray-700 dark:gray-200">
-    <Navi />
     <RouterView />
   </main>
 </template>
