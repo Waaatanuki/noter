@@ -4,8 +4,10 @@
 
 <template>
   <div>
-    <TheButton @click="$router.push('/gbf')">
-      123
-    </TheButton>
+    123
   </div>
 </template>
+
+<style scoped>
+
+</style>
