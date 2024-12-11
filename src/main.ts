@@ -1,3 +1,4 @@
+import { Icon } from '@iconify/vue'
 import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import { routes } from 'vue-router/auto-routes'
@@ -10,4 +11,5 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
 })
 app.use(router)
+app.component('Icon', Icon)
 app.mount('#app')

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const menu = [
   {
-    category: 'gbf',
+    category: 'GBF',
     list: [
       { path: '/gbf/drop', name: '根据物品类型统计掉落' },
     ],
