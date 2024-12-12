@@ -12,13 +12,19 @@ const menu = [
       { path: '/raft/dishes', name: '菜肴' },
     ],
   },
+  {
+    category: 'other',
+    list: [
+      { path: '/other/slide', name: '滑动切换' },
+    ],
+  },
 ]
 </script>
 
 <template>
   <div fc flex-wrap gap-3>
     <el-card v-for="cat in menu" :key="cat.category" :header="cat.category" min-w-100>
-      <div>
+      <div flex gap-2>
         <el-link v-for="item in cat.list" :key="item.path" @click="$router.push(item.path)">
           {{ item.name }}
         </el-link>
