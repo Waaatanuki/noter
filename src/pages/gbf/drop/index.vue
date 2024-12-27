@@ -1,5 +1,27 @@
 <script setup lang="ts">
-import Data from './Data.json'
+const dataStr = ref(`[
+  {
+    "questId": "819051",
+    "questName": "荒原踏み荒らす巨象",
+    "questImage": "/sp/quest/assets/replicard/5710090.png",
+    "total": 11443,
+    "reward": [
+      {
+        "key": "10_1331",
+        "count": 3535
+      }
+    ]
+  }
+]`)
+
+const data = computed(() => {
+  try {
+    return JSON.parse(dataStr.value)
+  }
+  catch (e) {
+    return []
+  }
+})
 
 function getRatio(a = 0, b = 0) {
   if (b === 0)
@@ -11,7 +33,7 @@ function getRatio(a = 0, b = 0) {
 
 <template>
   <div m-auto fc flex-col flex-wrap gap-4 class="w-80%">
-    <el-card v-for="quest in Data" :key="quest.questId" :body-style="{ padding: '10px' }">
+    <el-card v-for="quest in data" :key="quest.questId" :body-style="{ padding: '10px' }">
       <div flex items-center justify-start text-sm>
         <div mr-15px w-100px fc shrink-0 flex-col>
           <img w-100px :src="getQuestImg(quest.questImage)">
@@ -38,5 +60,7 @@ function getRatio(a = 0, b = 0) {
         </div>
       </div>
     </el-card>
+
+    <el-input v-model="dataStr" :rows="5" type="textarea" />
   </div>
 </template>
