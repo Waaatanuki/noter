@@ -4,6 +4,7 @@ const menu = [
     category: 'GBF',
     list: [
       { path: '/gbf/drop', name: '根据物品类型统计掉落' },
+      { path: '/gbf/gw', name: '团战掉落统计' },
       { path: '/gbf/support', name: '友招' },
     ],
   },
