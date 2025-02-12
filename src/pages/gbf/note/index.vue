@@ -15,7 +15,7 @@
         <!-- <div h-661px w-481px shrink-0 ring-1>
           图片
         </div> -->
-        <img :src="getLocalImg('party')">
+        <img object-contain :src="getLocalImg('party')">
         <div shrink-0 text-start>
           <div>
             <div class="title">
@@ -56,7 +56,7 @@
               土水 奥伤4ta 技伤fc
             </div>
             <div class="content">
-              循环 [4ta→fc→4ta→fc蹲→满豆], 第三轮的fc打进200w特动, 再来一遍转阶段
+              循环 [4ta→fc→4ta→fc蹲→满豆], 第三轮的fc打进200w特动, 再来一遍第二轮fc转阶段
             </div>
           </div>
           <div>
@@ -65,7 +65,7 @@
             </div>
             <div class="content">
               只触发奥伤特动, 身上出db的时候, 开愚者1神盾2. 具体操作可参考视频<br>
-              尽量减少回合数, 剩余2%左右血量时, 关奥义A, 触发10弱体, 黑翼解掉之后打进下个阶段
+              猛猛冲, 剩余2%左右血量时, 关奥义A, 触发10弱体, 黑翼解掉之后打进下个阶段
             </div>
           </div>
           <div>
@@ -73,7 +73,8 @@
               40-15
             </div>
             <div class="content">
-              基本同火风阶段, 愚者2调整到复制, 000调整到白翼, 进15尽量保证全技能和召唤
+              基本同火风阶段, 40hit解不掉可以G了硬吃。愚者2调整到复制, 000调整到白翼<br>
+              20左右补惨雾, 留技能和召唤进15, 打进15的回合主角G, 攒一个200奥
             </div>
           </div>
           <div>
@@ -101,6 +102,6 @@
   --uno: font-bold text-xl;
 }
 .content {
-  --uno: ml-2 mb-1;
+  --uno: ml-2;
 }
 </style>
