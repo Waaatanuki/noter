@@ -19,7 +19,7 @@
         <div shrink-0 text-start>
           <div>
             <div class="title">
-              关于连击(只需要凑神盾和愚者)
+              关于连击
             </div>
             <div class="content">
               双芬+觉醒该刀(27.6)+U武(25)+极星剑(10)+奥义buff(20)+3层魂de解放(10)+神灭(5)=97.6
