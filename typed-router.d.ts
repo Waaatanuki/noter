@@ -26,6 +26,7 @@ declare module 'vue-router/auto-routes' {
     '/gbf/support/': RouteRecordInfo<'/gbf/support/', '/gbf/support', Record<never, never>, Record<never, never>>,
     '/other/playground': RouteRecordInfo<'/other/playground', '/other/playground', Record<never, never>, Record<never, never>>,
     '/other/slide': RouteRecordInfo<'/other/slide', '/other/slide', Record<never, never>, Record<never, never>>,
+    '/other/trip': RouteRecordInfo<'/other/trip', '/other/trip', Record<never, never>, Record<never, never>>,
     '/raft/dishes/': RouteRecordInfo<'/raft/dishes/', '/raft/dishes', Record<never, never>, Record<never, never>>,
   }
 }

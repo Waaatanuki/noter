@@ -19,6 +19,7 @@ const menu = [
     category: 'other',
     list: [
       { path: '/other/slide', name: '滑动切换' },
+      { path: '/other/trip', name: '旅行' },
       { path: '/other/playground', name: '测试' },
     ],
   },
