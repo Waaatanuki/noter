@@ -14,7 +14,6 @@ interface Event {
   quest: {
     questId: string
     questName: string
-    questImage: string
     celestialWeapon: number
     revenantWeapon: number
     bigMeat?: number
@@ -23,6 +22,72 @@ interface Event {
 }
 
 const eventList: Event[] = [
+  {
+    value: 'teamraid077',
+    title: '第77回古战场(光有利)',
+    date: [
+      '2025-04-07',
+      '2025-04-14',
+    ],
+    user: 5753,
+    cow: {
+      total: 1324032,
+      gold: 80656,
+      meat: 27750688,
+      summon: 46378,
+      weapon: 1618,
+    },
+    quest: [
+      {
+        questId: '929661',
+        questName: 'hell90',
+        celestialWeapon: 3000,
+        revenantWeapon: 2889,
+        bigMeat: 1488487,
+        total: 1327888,
+      },
+      {
+        questId: '929671',
+        questName: 'hell95',
+        celestialWeapon: 293,
+        revenantWeapon: 288,
+        bigMeat: 186127,
+        total: 118343,
+      },
+      {
+        questId: '929681',
+        questName: 'hell100',
+        celestialWeapon: 1132,
+        revenantWeapon: 1142,
+        bigMeat: 946266,
+        total: 395440,
+      },
+      {
+        questId: '929691',
+        questName: 'hell150',
+        celestialWeapon: 1468,
+        revenantWeapon: 1427,
+        bigMeat: 1491632,
+        total: 495497,
+      },
+      {
+        questId: '929701',
+        questName: 'hell200',
+        celestialWeapon: 491,
+        revenantWeapon: 513,
+        bigMeat: 753570,
+        total: 181453,
+      },
+      {
+        questId: '929711',
+        questName: 'hell250',
+        celestialWeapon: 569,
+        revenantWeapon: 548,
+        bigMeat: 2,
+        total: 192098,
+      },
+    ],
+  },
   {
     value: 'teamraid076',
     title: '第76回古战场(水有利)',
@@ -41,8 +106,7 @@ const eventList: Event[] = [
     quest: [
       {
         questId: '926761',
-        questName: '90HELL',
-        questImage: 'teamraid076_hell90',
+        questName: 'hell90',
         celestialWeapon: 2944,
         revenantWeapon: 2783,
         bigMeat: 1411422,
@@ -50,8 +114,7 @@ const eventList: Event[] = [
       },
       {
         questId: '926771',
-        questName: '95HELL',
-        questImage: 'teamraid076_hell95',
+        questName: 'hell95',
         celestialWeapon: 162,
         revenantWeapon: 151,
         bigMeat: 109011,
@@ -59,8 +122,7 @@ const eventList: Event[] = [
       },
       {
         questId: '926781',
-        questName: '100HELL',
-        questImage: 'teamraid076_hell100',
+        questName: 'hell100',
         celestialWeapon: 1145,
         revenantWeapon: 1115,
         bigMeat: 907449,
@@ -68,8 +130,7 @@ const eventList: Event[] = [
       },
       {
         questId: '926791',
-        questName: '150HELL',
-        questImage: 'teamraid076_hell150',
+        questName: 'hell150',
         celestialWeapon: 1182,
         revenantWeapon: 1216,
         bigMeat: 1267107,
@@ -77,8 +138,7 @@ const eventList: Event[] = [
       },
       {
         questId: '926801',
-        questName: '200HELL',
-        questImage: 'teamraid076_hell200',
+        questName: 'hell200',
         celestialWeapon: 167,
         revenantWeapon: 181,
         bigMeat: 257587,
@@ -86,8 +146,7 @@ const eventList: Event[] = [
       },
       {
         questId: '926811',
-        questName: '250HELL',
-        questImage: 'teamraid076_hell250',
+        questName: 'hell250',
         celestialWeapon: 263,
         revenantWeapon: 329,
         bigMeat: 0,
@@ -113,8 +172,7 @@ const eventList: Event[] = [
     quest: [
       {
         questId: '924561',
-        questName: '90HELL',
-        questImage: 'teamraid075_hell90',
+        questName: 'hell90',
         celestialWeapon: 2731,
         revenantWeapon: 2607,
         bigMeat: 1309138,
@@ -122,8 +180,7 @@ const eventList: Event[] = [
       },
       {
         questId: '924571',
-        questName: '95HELL',
-        questImage: 'teamraid075_hell95',
+        questName: 'hell95',
         celestialWeapon: 235,
         revenantWeapon: 243,
         bigMeat: 170586,
@@ -131,8 +188,7 @@ const eventList: Event[] = [
       },
       {
         questId: '924581',
-        questName: '100HELL',
-        questImage: 'teamraid075_hell100',
+        questName: 'hell100',
         celestialWeapon: 685,
         revenantWeapon: 742,
         bigMeat: 555169,
@@ -140,8 +196,7 @@ const eventList: Event[] = [
       },
       {
         questId: '924591',
-        questName: '150HELL',
-        questImage: 'teamraid075_hell150',
+        questName: 'hell150',
         celestialWeapon: 554,
         revenantWeapon: 547,
         bigMeat: 612276,
@@ -149,8 +204,7 @@ const eventList: Event[] = [
       },
       {
         questId: '924601',
-        questName: '200HELL',
-        questImage: 'teamraid075_hell200',
+        questName: 'hell200',
         celestialWeapon: 151,
         revenantWeapon: 124,
         bigMeat: 192324,
@@ -158,8 +212,7 @@ const eventList: Event[] = [
       },
       {
         questId: '924611',
-        questName: '250HELL',
-        questImage: 'teamraid075_hell250',
+        questName: 'hell250',
         celestialWeapon: 281,
         revenantWeapon: 253,
         bigMeat: 0,
@@ -185,8 +238,7 @@ const eventList: Event[] = [
     quest: [
       {
         questId: '922461',
-        questName: '90HELL',
-        questImage: 'teamraid074_hell90',
+        questName: 'hell90',
         celestialWeapon: 4308,
         revenantWeapon: 3438,
         bigMeat: 1820851,
@@ -194,8 +246,7 @@ const eventList: Event[] = [
       },
       {
         questId: '922471',
-        questName: '95HELL',
-        questImage: 'teamraid074_hell95',
+        questName: 'hell95',
         celestialWeapon: 305,
         revenantWeapon: 302,
         bigMeat: 184796,
@@ -203,8 +254,7 @@ const eventList: Event[] = [
       },
       {
         questId: '922481',
-        questName: '100HELL',
-        questImage: 'teamraid074_hell100',
+        questName: 'hell100',
         celestialWeapon: 775,
         revenantWeapon: 753,
         bigMeat: 489912,
@@ -212,8 +262,7 @@ const eventList: Event[] = [
       },
       {
         questId: '922491',
-        questName: '150HELL',
-        questImage: 'teamraid074_hell150',
+        questName: 'hell150',
         celestialWeapon: 763,
         revenantWeapon: 686,
         bigMeat: 655175,
@@ -221,8 +270,7 @@ const eventList: Event[] = [
       },
       {
         questId: '922501',
-        questName: '200HELL',
-        questImage: 'teamraid074_hell200',
+        questName: 'hell200',
         celestialWeapon: 303,
         revenantWeapon: 246,
         bigMeat: 335710,
@@ -230,8 +278,7 @@ const eventList: Event[] = [
       },
       {
         questId: '922511',
-        questName: '250HELL',
-        questImage: 'teamraid074_hell250',
+        questName: 'hell250',
         celestialWeapon: 330,
         revenantWeapon: 339,
         bigMeat: 0,
@@ -257,40 +304,35 @@ const eventList: Event[] = [
     quest: [
       {
         questId: '920261',
-        questName: '90HELL',
-        questImage: 'teamraid073_hell90',
+        questName: 'hell90',
         celestialWeapon: 2883,
         revenantWeapon: 2686,
         total: 1217737,
       },
       {
         questId: '920271',
-        questName: '95HELL',
-        questImage: 'teamraid073_hell95',
+        questName: 'hell95',
         celestialWeapon: 842,
         revenantWeapon: 797,
         total: 340987,
       },
       {
         questId: '920281',
-        questName: '100HELL',
-        questImage: 'teamraid073_hell100',
+        questName: 'hell100',
         celestialWeapon: 105,
         revenantWeapon: 100,
         total: 23442,
       },
       {
         questId: '920291',
-        questName: '150HELL',
-        questImage: 'teamraid073_hell150',
+        questName: 'hell150',
         celestialWeapon: 489,
         revenantWeapon: 533,
         total: 187959,
       },
       {
         questId: '920301',
-        questName: '200HELL',
-        questImage: 'teamraid073_hell200',
+        questName: 'hell200',
         celestialWeapon: 624,
         revenantWeapon: 606,
         total: 195655,
@@ -322,7 +364,7 @@ const eventList: Event[] = [
           </div>
         </QuestCard>
         <template v-for="quest in event.quest" :key="quest.questId">
-          <QuestCard :quest-image="`/sp/assets/summon/qm/${quest.questImage}.png`" :total="quest.total">
+          <QuestCard :quest-image="`/sp/assets/summon/qm/${event.value}_${quest.questName}.png`" :total="quest.total">
             <div w-400px fc gap-10>
               <ItemStatistic img="/sp/assets/weapon/s/1040025400.jpg" :value="quest.celestialWeapon" :rate="quest.celestialWeapon / quest.total" />
               <ItemStatistic img="/sp/assets/weapon/s/1040001800.jpg" :value="quest.revenantWeapon" :rate="quest.revenantWeapon / quest.total" />
