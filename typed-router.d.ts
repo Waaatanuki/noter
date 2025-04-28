@@ -20,10 +20,10 @@ declare module 'vue-router/auto-routes' {
   export interface RouteNamedMap {
     '/': RouteRecordInfo<'/', '/', Record<never, never>, Record<never, never>>,
     '/[...all]': RouteRecordInfo<'/[...all]', '/:all(.*)', { all: ParamValue<true> }, { all: ParamValue<false> }>,
-    '/gbf/artifact/': RouteRecordInfo<'/gbf/artifact/', '/gbf/artifact', Record<never, never>, Record<never, never>>,
     '/gbf/drop/': RouteRecordInfo<'/gbf/drop/', '/gbf/drop', Record<never, never>, Record<never, never>>,
     '/gbf/gw/': RouteRecordInfo<'/gbf/gw/', '/gbf/gw', Record<never, never>, Record<never, never>>,
     '/gbf/note/': RouteRecordInfo<'/gbf/note/', '/gbf/note', Record<never, never>, Record<never, never>>,
+    '/gbf/shenxian/': RouteRecordInfo<'/gbf/shenxian/', '/gbf/shenxian', Record<never, never>, Record<never, never>>,
     '/gbf/support/': RouteRecordInfo<'/gbf/support/', '/gbf/support', Record<never, never>, Record<never, never>>,
     '/other/playground': RouteRecordInfo<'/other/playground', '/other/playground', Record<never, never>, Record<never, never>>,
     '/other/slide': RouteRecordInfo<'/other/slide', '/other/slide', Record<never, never>, Record<never, never>>,
