@@ -27,6 +27,15 @@ const tableData = [
     光: { time: '0:34', count: 11 },
     暗: { time: '0:49', count: 6 },
   },
+  {
+    date: '2025-04',
+    火: { time: '0:28', count: 13 },
+    水: { time: '0:27', count: 10 },
+    土: { time: '0:27', count: 16 },
+    风: { time: '0:29', count: 5 },
+    光: { time: '0:25', count: 11 },
+    暗: { time: '0:30', count: 10 },
+  },
 ]
 
 const column = ['火', '水', '土', '风', '光', '暗']
@@ -53,15 +62,6 @@ function isFastestAttr(row: any, attr: string) {
 function isMostAttr(row: any, attr: string) {
   const maxCount = Math.max(...column.map(col => row[col].count))
   return row[attr].count === maxCount
-}
-
-const attrColor: { [key: string]: string } = {
-  火: '#F56C6C',
-  水: '#409EFF',
-  土: '#8e633f',
-  风: '#67C23A',
-  光: '#fcd34d',
-  暗: '#7e22ce',
 }
 </script>
 
