@@ -9,7 +9,7 @@ defineProps<{ questImage: string, total: number, msg?: string }>()
         <img w-100px :src="getQuestImg(questImage)">
         <div mt-2px fc gap-2px>
           <div i-game-icons:crossed-swords />
-          <div text-orange font-black>
+          <div text-orange>
             {{ total.toLocaleString() }}
           </div>
           <div i-game-icons:crossed-swords />

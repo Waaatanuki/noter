@@ -11,6 +11,12 @@ interface Event {
     summon: number
     weapon: number
   }
+  swarm?: {
+    total: number
+    meat: number
+    summon: number
+    weapon: number
+  }
   quest: {
     questId: string
     questName: string
@@ -22,6 +28,29 @@ interface Event {
 }
 
 const eventList: Event[] = [
+  {
+    value: 'teamraid078',
+    title: '第78回古战场(火有利)',
+    date: ['2025-06-21', '2025-06-28'],
+    user: 5454,
+    cow: { total: 462646, gold: 28151, meat: 9602102, summon: 16213, weapon: 594 },
+    swarm: { total: 152159, meat: 35249739, summon: 158537, weapon: 4228 },
+    quest: [
+      {
+        questId: '931171',
+        questName: 'hell90',
+        celestialWeapon: 1396,
+        revenantWeapon: 1293,
+        bigMeat: 750075,
+        total: 751519,
+      },
+      { questId: '931181', questName: 'hell95', celestialWeapon: 157, revenantWeapon: 165, bigMeat: 117078, total: 81973 },
+      { questId: '931191', questName: 'hell100', celestialWeapon: 1171, revenantWeapon: 1178, bigMeat: 881358, total: 367575 },
+      { questId: '931201', questName: 'hell150', celestialWeapon: 1413, revenantWeapon: 1397, bigMeat: 1331033, total: 440771 },
+      { questId: '931211', questName: 'hell200', celestialWeapon: 346, revenantWeapon: 308, bigMeat: 494966, total: 122614 },
+      { questId: '931221', questName: 'hell250', celestialWeapon: 404, revenantWeapon: 418, bigMeat: 0, total: 125263 },
+    ],
+  },
   {
     value: 'teamraid077',
     title: '第77回古战场(光有利)',
@@ -344,28 +373,36 @@ const eventList: Event[] = [
 
 <template>
   <div m-auto flex gap-4>
-    <el-card v-for="event in eventList" :key="event.value" shrink-0 style="width: 600px;" :body-style="{ padding: '10px' }">
+    <el-card v-for="event in eventList" :key="event.value" shrink-0 style="width: 500px;" :body-style="{ padding: '10px' }">
       <template #header>
-        <div flex justify-between>
-          <div>
-            {{ event.title }}  {{ event.date.join('至') }}
+        <div flex items-center justify-between>
+          <div flex flex-col items-start>
+            <div>{{ event.date.join('至') }}</div>
+            <div>{{ event.title }}</div>
           </div>
           <div>统计玩家：{{ event.user }}</div>
         </div>
       </template>
 
       <div my-10px fc flex-wrap gap-10px>
-        <QuestCard quest-image="/sp/quest/assets/2040066000_ex_plus.png" :total="event.cow.total">
-          <div w-400px fc gap-10>
-            <ItemStatistic img="/sp/assets/item/article/m/10116.jpg" hidden :is-percent="false" :value="event.cow.meat" :rate="event.cow.meat / event.cow.total" />
-            <ItemStatistic img="/sp/assets/summon/qm/teamraid_ex_plus_golden.png" hidden :value="event.cow.gold" :rate="event.cow.gold / event.cow.total" />
+        <QuestCard quest-image="/sp/quest/assets/2040070000_ex_plus.png" :total="event.cow.total">
+          <div w-350px fc gap-10>
+            <ItemStatistic img="/sp/assets/item/article/s/10116.jpg" hidden :is-percent="false" :value="event.cow.meat" :rate="event.cow.meat / event.cow.total" />
+            <!-- <ItemStatistic img="/sp/assets/summon/qm/teamraid_ex_plus_golden.png" hidden :value="event.cow.gold" :rate="event.cow.gold / event.cow.total" /> -->
             <ItemStatistic img="/sp/assets/summon/s/2040022000.jpg" hidden :value="event.cow.summon" :rate="event.cow.summon / event.cow.total" />
             <ItemStatistic img="/sp/assets/weapon/s/1040001800.jpg" :value="event.cow.weapon" :rate="event.cow.weapon / event.cow.total" />
           </div>
         </QuestCard>
+        <QuestCard v-if="event.swarm" quest-image="/sp/quest/assets/2040070000_swarm.png" :total="event.swarm.total">
+          <div w-350px fc gap-10>
+            <ItemStatistic img="/sp/assets/item/article/s/10116.jpg" hidden :is-percent="false" :value="event.swarm.meat" :rate="event.swarm.meat / event.swarm.total" />
+            <ItemStatistic img="/sp/assets/summon/s/2040022000.jpg" hidden :value="event.swarm.summon" :rate="event.swarm.summon / event.swarm.total" />
+            <ItemStatistic img="/sp/assets/weapon/s/1040001800.jpg" :value="event.swarm.weapon" :rate="event.swarm.weapon / event.swarm.total" />
+          </div>
+        </QuestCard>
         <template v-for="quest in event.quest" :key="quest.questId">
           <QuestCard :quest-image="`/sp/assets/summon/qm/${event.value}_${quest.questName}.png`" :total="quest.total">
-            <div w-400px fc gap-10>
+            <div w-350px fc gap-10>
               <ItemStatistic img="/sp/assets/weapon/s/1040025400.jpg" :value="quest.celestialWeapon" :rate="quest.celestialWeapon / quest.total" />
               <ItemStatistic img="/sp/assets/weapon/s/1040001800.jpg" :value="quest.revenantWeapon" :rate="quest.revenantWeapon / quest.total" />
               <ItemStatistic
