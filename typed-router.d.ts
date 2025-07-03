@@ -23,6 +23,7 @@ declare module 'vue-router/auto-routes' {
     '/gbf/drop/': RouteRecordInfo<'/gbf/drop/', '/gbf/drop', Record<never, never>, Record<never, never>>,
     '/gbf/gw/': RouteRecordInfo<'/gbf/gw/', '/gbf/gw', Record<never, never>, Record<never, never>>,
     '/gbf/note/': RouteRecordInfo<'/gbf/note/', '/gbf/note', Record<never, never>, Record<never, never>>,
+    '/gbf/npc/': RouteRecordInfo<'/gbf/npc/', '/gbf/npc', Record<never, never>, Record<never, never>>,
     '/gbf/shenxian/': RouteRecordInfo<'/gbf/shenxian/', '/gbf/shenxian', Record<never, never>, Record<never, never>>,
     '/gbf/support/': RouteRecordInfo<'/gbf/support/', '/gbf/support', Record<never, never>, Record<never, never>>,
     '/other/playground': RouteRecordInfo<'/other/playground', '/other/playground', Record<never, never>, Record<never, never>>,

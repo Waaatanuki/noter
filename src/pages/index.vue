@@ -5,6 +5,7 @@ const menu = [
     list: [
       { path: '/gbf/drop', name: '根据物品类型统计掉落' },
       { path: '/gbf/gw', name: '团战掉落统计' },
+      { path: '/gbf/npc', name: '新建角色信息' },
       { path: '/gbf/shenxian', name: '神仙杯' },
       { path: '/gbf/support', name: '友招' },
       { path: '/gbf/note', name: '攻略笔记' },

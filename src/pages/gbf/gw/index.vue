@@ -377,8 +377,8 @@ const eventList: Event[] = [
       <template #header>
         <div flex items-center justify-between>
           <div flex flex-col items-start>
-            <div>{{ event.date.join('至') }}</div>
             <div>{{ event.title }}</div>
+            <div>{{ event.date.join('至') }}</div>
           </div>
           <div>统计玩家：{{ event.user }}</div>
         </div>
