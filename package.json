@@ -1,7 +1,7 @@
 {
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@10.8.1",
+  "packageManager": "pnpm@10.12.4",
   "scripts": {
     "build": "vite build",
     "dev": "vite --port 3333 --open",
@@ -9,36 +9,36 @@
     "up": "taze major -I"
   },
   "dependencies": {
-    "@iconify/vue": "^4.3.0",
-    "@unhead/vue": "^2.0.5",
+    "@iconify/vue": "^5.0.0",
+    "@unhead/vue": "^2.0.11",
     "@vueuse/core": "^13.1.0",
     "@vueuse/head": "^2.0.0",
-    "element-plus": "^2.9.7",
-    "vue": "^3.5.13",
-    "vue-router": "^4.5.0"
+    "element-plus": "^2.10.2",
+    "vue": "^3.5.17",
+    "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.12.0",
-    "@iconify-json/carbon": "^1.2.8",
-    "@iconify-json/game-icons": "^1.2.1",
-    "@shikijs/markdown-it": "^3.2.2",
+    "@antfu/eslint-config": "^4.16.2",
+    "@iconify-json/carbon": "^1.2.10",
+    "@iconify-json/game-icons": "^1.2.3",
+    "@shikijs/markdown-it": "^3.7.0",
     "@types/markdown-it-link-attributes": "^3.0.5",
-    "@types/node": "^22.14.1",
-    "@unocss/eslint-config": "^66.0.0",
-    "@unocss/eslint-plugin": "^66.0.0",
-    "@unocss/reset": "^66.0.0",
-    "@vitejs/plugin-vue": "^5.2.3",
+    "@types/node": "^22.16.0",
+    "@unocss/eslint-config": "^66.3.2",
+    "@unocss/eslint-plugin": "^66.3.2",
+    "@unocss/reset": "^66.3.2",
+    "@vitejs/plugin-vue": "^6.0.0",
     "@vue/test-utils": "^2.4.6",
-    "eslint": "^9.24.0",
+    "eslint": "^9.30.1",
     "eslint-plugin-format": "^1.0.1",
     "markdown-it-link-attributes": "^4.0.1",
     "typescript": "5.7.3",
-    "unocss": "^66.0.0",
-    "unplugin-auto-import": "^19.1.2",
-    "unplugin-vue-components": "^28.5.0",
-    "unplugin-vue-markdown": "^28.3.1",
-    "unplugin-vue-router": "^0.12.0",
-    "vite": "^6.2.6",
-    "vite-plugin-pages": "^0.33.0"
+    "unocss": "^66.3.2",
+    "unplugin-auto-import": "^19.3.0",
+    "unplugin-vue-components": "^28.8.0",
+    "unplugin-vue-markdown": "^29.1.0",
+    "unplugin-vue-router": "^0.14.0",
+    "vite": "^7.0.2",
+    "vite-plugin-pages": "^0.33.1"
   }
 }
